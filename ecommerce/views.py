@@ -1,8 +1,12 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-
 def home_page(request):
+    return render(request, "home_page.html", {})
+def about_page(request):
+    return render(request, "home_page.html", {})
+
+def contact_page(request):
     return render(request, "home_page.html", {})
 
 def home_page_old(request):
@@ -20,7 +24,6 @@ def home_page_old(request):
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
